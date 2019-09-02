@@ -1,5 +1,6 @@
-package com.unicom.girl;
+package com.unicom.girl.service;
 
+import com.unicom.girl.domain.Girl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,4 +19,6 @@ public interface GirlService {
 
       void insertTwo() throws RuntimeException;
 
+      public void getAge(Integer id) throws Exception;
+      public Girl findOne(Integer id);
 }

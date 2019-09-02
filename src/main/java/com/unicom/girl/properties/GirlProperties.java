@@ -1,38 +1,23 @@
-package com.unicom.girl;
+package com.unicom.girl.properties;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
 /**
  * @Copyright: Unicom (Zhejiang) Industrial Internet Co., Ltd.    2019 <br/>
  * @Desc: <br/>
  * @ProjectName: girl <br/>
- * @Date: 2019/8/27 19:15 <br/>
+ * @Date: 2019/8/27 16:01 <br/>
  * @Author: yangjiabin
  */
-@Entity
-public class Girl {
-
-    @Id
-    @GeneratedValue
-    private Integer id;
+@Component
+@ConfigurationProperties(prefix ="girl")
+public class GirlProperties {
 
     private String cupSize;
 
     private Integer age;
-
-    public  Girl(){
-
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getCupSize() {
         return cupSize;

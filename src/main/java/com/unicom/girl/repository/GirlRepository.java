@@ -1,5 +1,6 @@
-package com.unicom.girl;
+package com.unicom.girl.repository;
 
+import com.unicom.girl.domain.Girl;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

@@ -1,5 +1,6 @@
-package com.unicom.girl;
+package com.unicom.girl.controller;
 
+import com.unicom.girl.properties.GirlProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
